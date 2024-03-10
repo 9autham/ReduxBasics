@@ -68,7 +68,8 @@ In Slice we have reducer property which is used to modify the state
     Now the addtodo and deletodo are the reducer function
 
 Create "action creater functions" and export the reducer functions
-    export default {addTodo,deletodo} todoSlice.actions
+    export const {toadd,tosub} =counterSlice.actions (or)
+    export const {addTodo,deletodo}=todoSlice.actions
 
 
 React Component can call the action creator function to modify the current state
